@@ -70,7 +70,6 @@ public class MyChar implements CharSequence {
        return string;
     }*/
 
-
     @Override
     public String toString() {
         return Arrays.toString(text);
