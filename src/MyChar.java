@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class MyChar implements CharSequence {
 
     private char[] text;
@@ -58,7 +60,7 @@ public class MyChar implements CharSequence {
         return (start == 0) && (end == text.length) ? this : new MyChar(text, start, end);
     }
 
-    @Override
+    /*@Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         for(char i : text)
@@ -66,5 +68,11 @@ public class MyChar implements CharSequence {
 
        String string = stringBuilder.toString();
        return string;
+    }*/
+
+
+    @Override
+    public String toString() {
+        return Arrays.toString(text);
     }
 }

@@ -11,6 +11,5 @@ public class Main {
         CharSequence sub = chars.subSequence(0, 5);
         System.out.println(sub);
 
-
     }
 }
